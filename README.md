@@ -32,8 +32,6 @@ request.body(json):
 
 {"body":"your message here",
 "receiver_email":"receivers email here"}
-7 add a new genre:
------------------
-8 remove a message
+7 remove a message
 ----------------
 DELETE /messages/$id/
