@@ -27,7 +27,9 @@ GET /messages/
 6 add a new message
 ---------------
 POST /messages/
+
 request.body(json):
+
 {"body":"your message here",
 "receiver_email":"receivers email here"}
 7 add a new genre:
