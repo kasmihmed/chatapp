@@ -50,6 +50,13 @@ our advice is to go with the Nodejs Socket.io and only use that for broadcasting
 then the Node.js server should send async requests to the django in case the service went down or interupted.
 it is also adviced to persist those chats channels content in a cache storage solution(like redis).
 
+Scaling
+==========
+
+in case this example is considered for scalling the first thing to think about is scalling the realtime service(node.js or tornado or gevent) and then the django project is also easy to scale. 
+- in case there is too many read queries to the database a slave db machine can be added. 
+- in case there is too many realtime open connection then the RTC service should be scalled.
+
 NOTE :
 ------
 having javascript loading every timespan is a very bad way of doing it, since it will create requests that will just load the server.
