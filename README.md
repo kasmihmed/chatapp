@@ -23,7 +23,12 @@ http://127.0.0.1:8000/admin/login/?next=/messages/
 
 5 get all the messages
 -------------------
-GET /messages/
+GET /messages/?page_nr=$page_nr&page_limit=$page_limit
+
+
+page_nr is the page number and has as default value 1
+page_limit is the page content count and has as default value 10
+
 6 add a new message
 ---------------
 POST /messages/
@@ -32,6 +37,7 @@ request.body(json):
 
 {"body":"your message here",
 "receiver_email":"receivers email here"}
+
 7 remove a message
 ----------------
 DELETE /messages/$id/
