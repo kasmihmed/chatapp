@@ -43,4 +43,7 @@ there is many ways to change this to a realtime project, either to use Tornado o
 our advice is to go with the Nodejs Socket.io and only use that for broadcasting the messages and receiving the messages.
 then the Node.js server should send async requests to the django in case the service went down or interupted.
 it is also adviced to persist those chats channels content in a cache storage solution(like redis).
-NOTE : having javascript loading every timespan is a very bad way of doing it, since it will create requests that will just load the server.
+
+NOTE :
+------
+having javascript loading every timespan is a very bad way of doing it, since it will create requests that will just load the server.
