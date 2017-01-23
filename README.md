@@ -57,6 +57,9 @@ in case this example is considered for scalling the first thing to think about i
 - in case there is too many read queries to the database a slave db machine can be added. 
 - in case there is too many realtime open connection then the RTC service should be scalled.
 
+example of a scaled architecture:
+![architecture users](https://phmedevcloud.blob.core.windows.net/sidi-test/Screen%20Shot%202017-01-23%20at%2010.40.51%20AM.png "architecture example")
+
 NOTE :
 ------
 having javascript loading every timespan is a very bad way of doing it, since it will create requests that will just load the server.
